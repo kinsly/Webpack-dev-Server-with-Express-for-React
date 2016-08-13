@@ -4,13 +4,15 @@ var path = require("path");
 
 module.exports = {
     devtool: 'cheap-module-eval-source-map', //for development
+
+    // location of your main js file
     entry: [
       path.resolve(__dirname, 'js', 'entry.js'),
       ],
-    
+
     output: {
-        path: path.join(__dirname, "public/static"), //Place where Final Compiled js is created in production evirnment
-        filename: "bundle.js",
+        path: path.join(__dirname, "public/static"), //Where to place Final Compiled js
+        filename: "bundle.js",    //Name of compiled js
     },
 
     module: {

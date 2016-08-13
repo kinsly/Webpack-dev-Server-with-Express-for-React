@@ -1,8 +1,0 @@
-
-class myClass{
-
-firstFunc(){
-alert("Wada")
-}	
-
-}
