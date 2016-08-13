@@ -1,22 +1,25 @@
 import React from "react"
 import {render} from "react-dom"
 
-class MyClass extends React.Component{
+import SomeComponent from "./testComponent.js"
+
+class MainContainer extends React.Component{
 
 	render(){
 		return(
 			<div>
-				<h2> Ado wada bn </h2>
+				<h2>My React Application</h2>
+				<SomeComponent/>
 			</div>
 
 			)
 	}
-	
+
 }
 
 
 render(
-	<MyClass/>
-	, 
+	<MainContainer/>
+	,
 	document.getElementById("root")
 	)

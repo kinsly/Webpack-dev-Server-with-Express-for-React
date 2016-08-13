@@ -30,6 +30,7 @@ if(appConfig.NODE_ENV == "development"){
     stats: {colors: true},
     noInfo: true,
     inline: true,
+    hot: true
   });
 
   //Add Webpack dev-server to express
